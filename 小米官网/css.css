@@ -1,0 +1,461 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #333;
+}
+
+.top .topDh {
+  width: 1226px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topDh a {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topDh a:hover {
+  color: white;
+}
+
+.top .topDh .left a {
+  padding: 0 6px;
+  border-right: 1px solid #424242;
+}
+
+.top .topDh .left a.last,
+.top .topDh .right a.last {
+  border-right: none;
+}
+
+.top .topDh .right {
+  display: flex;
+}
+
+.top .topDh .right a {
+  border-right: 1px solid #424242;
+  padding: 0 6px;
+}
+
+.top .topDh .right .login {
+  text-align: center;
+}
+
+.top .topDh .bags a {
+  margin-left: 14px;
+  display: block;
+  width: 120px;
+  height: 40px;
+  background-color: rgb(66, 66, 66);
+  text-align: center;
+}
+
+.top .topDh .bags a:hover {
+  color: #ff6700;
+  background: white;
+}
+
+.iconfont {
+  font-weight: 600;
+}
+
+/* 导航部分 */
+.Dh {
+  width: 1226px;
+  height: 100px;
+  margin: 0 auto;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Dh .left {
+  display: flex;
+  align-items: center;
+}
+
+.Dh .left .logo {
+  width: 55px;
+  height: 55px;
+  background-color: #ff6700;
+  background-image: url(img/mi-logo.png);
+  background-position: center;
+}
+
+.Dh .left .kongbai {
+  width: 165px;
+  height: 100px;
+}
+
+.Dh .left .logo:hover {
+  background-image: url(img/mi-home.png);
+}
+
+.Dh .right a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #333333;
+  padding: 0 10px;
+  transition: color 0.3s;
+}
+
+.Dh .right a:hover {
+  color: #ff6700;
+  transition: all 0.3s;
+}
+
+.Dh .right {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;
+}
+
+.Dh .right .DhSearch {
+  width: 300px;
+  height: 50px;
+  display: flex;
+}
+
+.Dh .right .DhSearch .input .mi {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 20px;
+  right: 120px;
+  top: 50%;
+  margin-top: -10px;
+  font-size: 12px;
+  line-height: 20px;
+  background-color: #eeeeee;
+  color: #757575;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.5s;
+}
+
+.Dh .right .DhSearch .input .mi:hover {
+  background-color: #ff6700;
+  color: white;
+  transition: all 0.5s;
+}
+
+.Dh .right .DhSearch .input .redmi {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 20px;
+  right: 10px;
+  top: 50%;
+  margin-top: -10px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  background-color: #eeeeee;
+  color: #757575;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+.Dh .right .DhSearch .input .redmi:hover {
+  background-color: #ff6700;
+  color: white;
+  transition: all 0.5s;
+}
+
+.input {
+  display: flex;
+  position: relative;
+}
+
+.input .input {
+  width: 245px;
+  border: 1px solid rgb(224, 224, 224);
+  outline: none;
+  padding: 0 10px;
+  transition: border 0.5s;
+}
+
+.input .input:hover {
+  border: 1px solid rgb(176, 176, 176);
+  transition: all 0.5s;
+}
+
+.input .input:focus {
+  border: 1px solid #ff6700;
+}
+
+.DhSearch .Search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(224, 224, 224);
+  border-left: none;
+}
+
+.DhSearch .Search:hover {
+  background-color: #ff6700;
+  color: white;
+  transition: background-color 0.5s;
+  border: none;
+}
+
+.DhSearch .Search .iconfont {
+  font-size: 25px;
+}
+
+.menuLB {
+  position: relative;
+  width: 1226px;
+  height: 460px;
+  margin: 0 auto;
+}
+
+.menu {
+  width: 234px;
+  height: 460px;
+  background-color: rgba(105, 101, 101, 0.6);
+  z-index: 2;
+  position: relative;
+}
+
+.menu .menuTop {
+  padding: 13px 0;
+}
+
+.menuList .ListItems {
+  width: 234px;
+  height: 42px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuList a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+.menuList a:hover {
+  background-color: #ff6700;
+}
+
+.LB {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1226px;
+  height: 460px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-prev {
+  position: relative;
+  left: 235px !important;
+}
+
+.TopFoot {
+  display: flex;
+  justify-content: space-between;
+  width: 1226px;
+  height: 170px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.TopFoot .littleicon {
+  width: 234px;
+  height: 100%;
+  background-color: #5f5750;
+
+}
+
+.TopFoot .littleicon .line1,
+.TopFoot .littleicon .line1 .iconfont {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.TopFoot .littleicon .line1 .icon1 {
+  width: 70px;
+  height: 80px;
+  color: rgb(201, 198, 196);
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid #665e57;
+  border-bottom: 1px solid #665e57;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.TopFoot .littleicon .line1 .icon1 .iconfont {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.TopFoot .littleicon .line1 .icon2 {
+  width: 70px;
+  height: 80px;
+  color: rgb(201, 198, 196);
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid #665e57;
+  border-bottom: 1px solid #665e57;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.TopFoot .littleicon .line1 .icon2 .iconfont {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.TopFoot .littleicon .line1 .icon3 {
+  width: 70px;
+  height: 80px;
+  color: rgb(201, 198, 196);
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px solid #665e57;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.TopFoot .littleicon .line1 .icon3 .iconfont {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+/* 第二行 */
+.TopFoot .littleicon .line2,
+.TopFoot .littleicon .line2 .iconfont {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.TopFoot .littleicon .line2 .icon1 {
+  width: 70px;
+  height: 75px;
+  color: rgb(201, 198, 196);
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid #665e57;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.TopFoot .littleicon .line2 .icon1 .iconfont {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.TopFoot .littleicon .line2 .icon2 {
+  width: 70px;
+  height: 75px;
+  color: rgb(201, 198, 196);
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid #665e57;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.TopFoot .littleicon .line2 .icon2 .iconfont {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.TopFoot .littleicon .line2 .icon3 {
+  width: 70px;
+  height: 75px;
+  color: rgb(201, 198, 196);
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.TopFoot .littleicon .line2 .icon3 .iconfont {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.TopFoot .littleicon .line1 .icon1:hover {
+  color: white;
+  transition: all .2s linear;
+}
+
+.TopFoot .littleicon .line1 .icon2:hover {
+  color: white;
+  transition: all .2s linear;
+}
+
+.TopFoot .littleicon .line1 .icon3:hover {
+  color: white;
+  transition: all .2s linear;
+}
+
+.TopFoot .littleicon .line2 .icon1:hover {
+  color: white;
+  transition: all .2s linear;
+}
+
+.TopFoot .littleicon .line2 .icon2:hover {
+  color: white;
+  transition: all .2s linear;
+}
+
+.TopFoot .littleicon .line2 .icon3:hover {
+  color: white;
+  transition: all .2s linear;
+}
+
+.RedmiNote {
+  width: 316px;
+  height: 100%;
+  background-image: url(img/redmiNote8.jpg);
+  background-size: 100% 100%;
+}
+
+.RedmiK30 {
+  width: 316px;
+  height: 100%;
+  background-image: url(img/K30.jpg);
+  background-size: 100% 100%;
+}
+
+.Miband4 {
+  width: 316px;
+  height: 100%;
+  background-image: url(img/band4.jpg);
+  background-size: 100% 100%;
+}
+
+.shangou {
+  margin-top: 15px;
+  width: 100%;
+  height: 1000px;
+  background-color: aliceblue;
+}
