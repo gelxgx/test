@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.db {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(230, 230, 230);
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  box-shadow: 5px 5px 5px rgb(219, 219, 219);
+}
+
+.tt {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px rgb(219, 219, 219);
+  transition: border-radius, .6s linear;
+}
+
+.ttLogo {
+  width: 100%;
+  height: 100%;
+  background-image: url(ttb.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+  transition: background-image .6s linear;
+
+}
+
+.tt:hover {
+  border-radius: 100px;
+  transition: all .6s linear;
+}
+
+.ttLogo:hover {
+  background-image: url(ttf.png);
+  transition: all .6s linear;
+}

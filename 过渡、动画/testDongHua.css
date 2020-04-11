@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.db {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(230, 230, 230);
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  box-shadow: 5px 5px 5px rgb(219, 219, 219);
+}
+
+.tt {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px rgb(219, 219, 219);
+  animation: dhbk 3s infinite alternate ease-in;
+}
+
+.ttLogo {
+  width: 100%;
+  height: 100%;
+  background-image: url(ttb.png);
+  background-repeat: no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+  animation: dhtb 3s infinite alternate ease-out;
+}
+
+@keyframes dhbk {
+  0% {
+    border-radius: 50px;
+    background-color: white;
+  }
+
+
+  100% {
+    border-radius: 100%;
+    background-color: rgb(18, 150, 219);
+
+  }
+}
+
+@keyframes dhtb {
+  0% {
+    background-image: url(ttf.png);
+  }
+
+  100% {
+    background-image: url(ttb.png);
+  }
+}
